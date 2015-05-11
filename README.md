@@ -148,6 +148,12 @@ machine https://conjur/api/authn
 IDENTITY
 ```
 
+This file should be read-only except to the `root` user (and the `conjur` group, if there is one):
+
+```sh-session
+$ chmod 0600 conjur.identity
+```
+
 ## 3. Create and grant the secrets
 
 Now we can create the AWS variables and give the layer permission to view their values.
