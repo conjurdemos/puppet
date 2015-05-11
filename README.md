@@ -167,7 +167,7 @@ Permission granted
 ## 4. Apply Puppet to the node
 
 ```sh-session
-$ docker run -v $PWD/conjur.identity:/etc/conjur.identity -it --rm puppet-demo bash
+$ docker run --add-host conjur:10.0.1.2 -v $PWD/conjur.identity:/etc/conjur.identity -it --rm puppet-demo bash
 
 # conjur authn whoami
 {"account":"demo","username":"host/puppet"}
