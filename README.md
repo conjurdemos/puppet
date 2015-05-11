@@ -22,8 +22,8 @@ file { $app_config:
 $policy = 'puppet-demo'
 conjurize_file { $app_config:
   variable_map => {
-    aws_access_key_id => "!var $policy/aws/access_key_id",
-    aws_secret_access_key => "!var $policy/aws/secret_access_key"
+    aws_access_key_id => "!var aws_access_key_id",
+    aws_secret_access_key => "!var aws_secret_access_key"
   }
 }
 ```
