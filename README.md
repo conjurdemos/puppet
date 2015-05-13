@@ -179,7 +179,7 @@ Permission granted
 $ docker run --add-host conjur:10.0.1.2 -v $PWD/conjur.identity:/etc/conjur.identity -it --rm puppet-demo bash
 
 # conjur authn whoami
-{"account":"demo","username":"host/puppet"}
+{"account":"demo","username":"host/example-app"}
 
 # puppet module install conjur-conjur
 
