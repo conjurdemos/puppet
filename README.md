@@ -47,7 +47,7 @@ add it to the image.
 
 ```sh-session
 $ cd puppet-secrets
-$ ./init.rb
+$ ./init.sh
 ```
 
 We're using a Puppet base image and installing the Conjur CLI and configuration to create our foundation image.
